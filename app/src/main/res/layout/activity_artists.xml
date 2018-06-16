@@ -1,33 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/music"
 
     tools:context=".artists">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout1"
+    >
 
+    <ImageView
+        android:id="@+id/allSongs"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/artist"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="1"
+        />
     <TextView
+        android:layout_weight="1"
         android:id="@+id/allSongs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text= "All Songs List"
+        android:text= "All Artists"
         android:textSize="40dp"
         android:textStyle="bold"
         android:textAllCaps="false"
         android:layout_marginLeft="20dp"
         />
-
+</LinearLayout>
     <TextView
         android:id="@+id/artist1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/allSongs"
+        android:layout_below="@+id/linearLayout1"
         android:layout_marginTop="15dp"
         android:text= "Ayo and Teo"
         android:textSize="25sp"
         android:textColor="#990000"
+        android:textStyle="bold"
         android:textAllCaps="false"
         android:layout_marginLeft="20dp"
         />
@@ -38,6 +61,7 @@
         android:layout_height="wrap_content"
         android:text= "Jass"
         android:textSize="25sp"
+        android:textStyle="bold"
         android:textColor="#990000"
         android:layout_below="@+id/artist1"
         android:layout_marginTop="15dp"
@@ -50,6 +74,7 @@
         android:text="Drake"
         android:textSize="25sp"
         android:textColor="#990000"
+        android:textStyle="bold"
         android:layout_below="@+id/artist2"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"
@@ -61,6 +86,7 @@
         android:text="Villen"
         android:textSize="25sp"
         android:textColor="#990000"
+        android:textStyle="bold"
         android:layout_below="@+id/artist3"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"
@@ -70,6 +96,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Jimmy"
+        android:textStyle="bold"
         android:textColor="#990000"
         android:textSize="25sp"
         android:layout_below="@+id/artist4"
@@ -81,6 +108,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Stressed Out"
+        android:textStyle="bold"
         android:textColor="#990000"
         android:textSize="25sp"
         android:layout_below="@+id/artist5"
@@ -95,10 +123,11 @@
         android:text="Young Dumb and Broke"
         android:textColor="#990000"
         android:textSize="25sp"
+        android:textStyle="bold"
         android:layout_below="@+id/artist6"
         android:layout_marginTop="15dp"
         android:layout_marginLeft="20dp"
         />
 
-
 </RelativeLayout>
+</ScrollView>
