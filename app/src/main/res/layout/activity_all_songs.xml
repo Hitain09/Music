@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,49 +7,27 @@
     android:paddingBottom="16dp"
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
-    android:paddingTop="6dp"
-    android:background="@drawable/music"
+    android:paddingTop="16dp"
     android:orientation="vertical"
     tools:context=".allSongs">
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/linearLayout1"
-    >
 
-    <ImageView
-        android:id="@+id/allSongs"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="15dp"
-        android:src="@drawable/allsongs"
-        android:textSize="40dp"
-        android:textStyle="bold"
-        android:textAllCaps="false"
-        android:layout_marginLeft="20dp"
-        android:layout_weight="1"
-        />
     <TextView
         android:id="@+id/allSongs"
-        android:layout_weight="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:text= "All Songs List"
         android:textSize="40dp"
         android:textStyle="bold"
         android:textAllCaps="false"
         android:layout_marginLeft="20dp"
         />
-</LinearLayout>
+
     <TextView
         android:id="@+id/song1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout1"
+        android:layout_below="@+id/allSongs"
         android:layout_marginTop="15dp"
         android:text= "Rolex - Ayo and Teo"
         android:textSize="25sp"
@@ -138,5 +116,5 @@
         android:layout_marginLeft="20dp"
         />
 
-    </RelativeLayout>
-</ScrollView>
+
+</RelativeLayout>
