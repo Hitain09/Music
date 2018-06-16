@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -15,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new nowPlayingClickListener();
-        TextView now = (TextView)findViewById(R.id.nowPlayingView);
+        ImageView now = (ImageView)findViewById(R.id.nowPlayingView);
         now.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
@@ -27,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         new allSongsClickListener();
-        TextView allsongs = (TextView)findViewById(R.id.allsongs_view);
+        ImageView allsongs = (ImageView)findViewById(R.id.allsongsView);
         allsongs.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
@@ -39,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         new artistsClickListener();
-        TextView artist = (TextView)findViewById(R.id.artistView);
+        ImageView artist = (ImageView)findViewById(R.id.artistView);
         artist.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
@@ -49,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         new favouritesClickListener();
-        TextView favr = (TextView)findViewById(R.id.fav_view);
+        ImageView favr = (ImageView)findViewById(R.id.favView);
         favr.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        TextView you = (TextView) findViewById(R.id.onlineView);
+        ImageView you = (ImageView) findViewById(R.id.onlineView);
         you.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,13 +77,33 @@ public class MainActivity extends AppCompatActivity {
 
 
         new playlistsClickListener();
-        TextView play = (TextView)findViewById(R.id.playlists );
+        ImageView play = (ImageView)findViewById(R.id.playlists );
         play.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
             {
                 Intent playlists = new Intent(MainActivity.this,Playlists.class);
                 startActivity(playlists);
+            }
+        });
+
+        ImageView playButton =(ImageView) findViewById(R.id.play);
+        playButton.setOnClickListener(new View.OnClickListener()
+        {
+            int no_of_clicks = 0;
+            public void onClick(View view) {
+                no_of_clicks++;
+
+                if (no_of_clicks % 2 == 0) {
+                    ImageView p = (ImageView) findViewById(R.id.play);
+                    p.setImageResource(R.drawable.play);
+
+                }
+                else
+                {
+                    ImageView p = (ImageView) findViewById(R.id.play);
+                    p.setImageResource(R.drawable.pause);
+                }
             }
         });
     }

@@ -4,10 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/music"
     tools:context=".Playlists">
-
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayout">
+    <ImageView
+        android:id="@+id/fav_view"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:src="@drawable/playlist"
+        android:textSize="25sp"
+        android:textColor="#990000"
+        android:layout_weight="1"
+        android:layout_below="@+id/allsongs_view"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        />
     <TextView
-        android:id="@+id/allSongs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -17,14 +32,15 @@
         android:textAllCaps="false"
         android:layout_marginLeft="20dp"
         />
-
+</LinearLayout>
     <TextView
         android:id="@+id/song1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/allSongs"
+        android:layout_below="@+id/linearLayout"
         android:layout_marginTop="15dp"
         android:text= "Rock Songs"
+        android:textStyle="bold"
         android:textSize="25sp"
         android:textColor="#990000"
         android:textAllCaps="false"
@@ -37,6 +53,7 @@
         android:layout_height="wrap_content"
         android:text= "Pop Songs"
         android:textSize="25sp"
+        android:textStyle="bold"
         android:textColor="#990000"
         android:layout_below="@+id/song1"
         android:layout_marginTop="15dp"
