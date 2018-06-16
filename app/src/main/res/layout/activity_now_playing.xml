@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nowPlaying">
+
+    <TextView
+        android:id="@+id/SongLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text= "Song Library"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/nowPlaying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text= "Now Playing"
+        android:textSize="25sp"
+        android:textColor="#990000"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/SongLibrary"
+        />
+
+    <TextView
+        android:id="@+id/song1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nowPlaying"
+        android:layout_marginTop="15dp"
+        android:text= "🎧 Rolex - Ayo and Teo"
+        android:textSize="25sp"
+        android:textColor="#009999"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favourites">
+
+    <TextView
+        android:id="@+id/allSongs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text= "All Songs List"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/song1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/allSongs"
+        android:layout_marginTop="15dp"
+        android:text= "Prada - Jass"
+        android:textSize="25sp"
+        android:textColor="#990000"
+        android:textAllCaps="false"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/song2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "Bentley - Jass"
+        android:textSize="25sp"
+        android:textColor="#990000"
+        android:layout_below="@+id/song1"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/song3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rolex - Ayo and Teo"
+        android:textSize="25sp"
+        android:textColor="#990000"
+        android:layout_below="@+id/song2"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/song4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="God's Plan - Drake"
+        android:textSize="25sp"
+        android:textColor="#990000"
+        android:layout_below="@+id/song3"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        />
+
+
+
+</RelativeLayout>
